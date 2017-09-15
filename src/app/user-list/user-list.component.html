@@ -1,0 +1,31 @@
+      <h1>Exam Front End</h1>
+      <h5>Rollandiaz</h5>
+      <div class="con">
+      <div class="center">
+      <table class="table table-bordered">
+        
+            <tr> 
+              
+              <th>Name</th>
+              <th>e-mail</th>
+              <th>Address</th>
+              <th>phone num</th>
+              <th>Company</th>
+              <th>Action</th>
+            </tr>
+        
+        
+            <tr *ngFor = "let u of data.UserList">
+              
+              <td>{{ u.Name }}</td>
+              <td>{{ u.Email }}</td>
+              <td>{{ u.Address }}</td>
+              <td>{{ u.Phone }}</td>
+              <td>{{ u.Company }}</td>
+              <td><button type="button" class="btn btn-danger" (click)='Remove(u.Id)'><span class="glyphicon glyphicon-trash"></span>
+                Delete
+              </button></td>
+            </tr>
+        </table>
+      </div>
+        </div>
